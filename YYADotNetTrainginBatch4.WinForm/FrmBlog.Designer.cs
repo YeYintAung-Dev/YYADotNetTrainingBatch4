@@ -37,6 +37,7 @@
             btnSave = new Button();
             btnCancel = new Button();
             dataGrid = new DataGridView();
+            btnUpdate = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGrid).BeginInit();
             SuspendLayout();
             // 
@@ -124,11 +125,23 @@
             dataGrid.CellFormatting += dataGrid_CellFormatting;
             dataGrid.Click += dataGrid_Click;
             // 
+            // btnUpdate
+            // 
+            btnUpdate.Location = new Point(357, 258);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(94, 29);
+            btnUpdate.TabIndex = 9;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Visible = false;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
             // FrmBlog
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1200, 426);
+            Controls.Add(btnUpdate);
             Controls.Add(dataGrid);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
@@ -157,5 +170,6 @@
         private Button btnSave;
         private Button btnCancel;
         private DataGridView dataGrid;
+        private Button btnUpdate;
     }
 }

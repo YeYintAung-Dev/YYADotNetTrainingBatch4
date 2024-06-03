@@ -1,3 +1,5 @@
+using YYADotNetTrainginBatch4.WinForm;
+
 namespace YYADotNetTrainingBatch4.WinForm
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace YYADotNetTrainingBatch4.WinForm
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmBlog());
+            Application.Run(new FrmMainMenu());
         }
     }
 }
